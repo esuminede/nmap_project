@@ -1,0 +1,69 @@
+{
+    "services": {
+        "20": "FTP Data",
+        "21": "FTP",
+        "22": "SSH",
+        "23": "Telnet",
+        "25": "SMTP",
+        "53": "DNS",
+        "67": "DHCP Server",
+        "68": "DHCP Client",
+        "69": "TFTP",
+        "80": "HTTP",
+        "110": "POP3",
+        "123": "NTP",
+        "137": "NetBIOS Name Service",
+        "138": "NetBIOS Datagram Service",
+        "139": "NetBIOS Session Service",
+        "143": "IMAP",
+        "161": "SNMP",
+        "162": "SNMP Trap",
+        "389": "LDAP",
+        "443": "HTTPS",
+        "445": "SMB",
+        "465": "SMTPS",
+        "514": "Syslog",
+        "587": "SMTP (Submission)",
+        "636": "LDAPS",
+        "993": "IMAPS",
+        "995": "POP3S",
+        "1433": "MSSQL",
+        "1521": "Oracle",
+        "3306": "MySQL",
+        "3389": "RDP",
+        "5432": "PostgreSQL",
+        "5900": "VNC",
+        "6379": "Redis",
+        "8080": "HTTP Proxy",
+        "8443": "HTTPS Alt",
+        "27017": "MongoDB"
+    },
+    "common_ports": {
+        "web": [80, 443, 8080, 8443],
+        "database": [1433, 1521, 3306, 5432, 27017],
+        "remote_access": [22, 23, 3389, 5900],
+        "mail": [25, 110, 143, 465, 587, 993, 995],
+        "file_transfer": [20, 21, 69],
+        "dns_dhcp": [53, 67, 68],
+        "network_services": [123, 137, 138, 139, 161, 162, 389, 445, 514, 636]
+    },
+    "fallback": {
+        "services": {
+            "20": "FTP Data",
+            "21": "FTP",
+            "22": "SSH",
+            "23": "Telnet",
+            "25": "SMTP",
+            "53": "DNS",
+            "80": "HTTP",
+            "443": "HTTPS",
+            "3306": "MySQL",
+            "3389": "RDP"
+        },
+        "common_ports": {
+            "web": [80, 443, 8080],
+            "database": [3306],
+            "remote_access": [22, 23, 3389]
+        }
+    }
+} 
